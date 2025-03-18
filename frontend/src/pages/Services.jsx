@@ -4,16 +4,7 @@ import BuyHomeIcon from "../assets/Services/house.png";
 import HomeInspectionIcon from "../assets/Services/inspection.png";
 import LegalServicesIcon from "../assets/Services/appartment.png";
 import FreeEvaluationIcon from "../assets/Services/evaluation.png";
-
-const ServiceCard = ({ icon, title, description }) => {
-  return (
-    <div className="bg-white p-8 rounded-2xl shadow-[0px_1px_40px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center gap-3">
-      <img src={icon} alt={title} className="h-18" />
-      <h3 className="font-bold text-xl">{title}</h3>
-      <p className="text-gray-600 text-sm w-64">{description}</p>
-    </div>
-  );
-};
+import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   const services = [
@@ -63,33 +54,42 @@ const Services = () => {
 
   return (
     <div
-      className="py-16"
+      className="py-8 sm:py-12 md:py-16"
+      id="services"
       style={{
         background:
           "linear-gradient(180deg, #EDF7FA 28.12%, rgba(255, 255, 255, 0.00) 100%)",
       }}
     >
       <div className="max-w-[1280px] relative mx-auto px-4">
-        {/* Vertical "SERVICES" text */}
-        <div className="absolute transform -rotate-90 -left-24 top-24 flex items-end gap-4">
+        {/* Vertical "SERVICES" text - hidden on mobile */}
+        <div className="hidden md:flex absolute transform -rotate-90 -left-24 top-24 items-end gap-4">
           <div className="bg-[#8665F6] w-24 h-1 my-auto"></div>
           <span className="text-black tracking-widest text-center uppercase text-xl font-semibold">
             Services
           </span>
         </div>
 
+        {/* Mobile "SERVICES" indicator */}
+        <div className="flex md:hidden items-center gap-3 mb-4 sm:mb-6">
+          <div className="bg-[#8665F6] w-12 h-1"></div>
+          <span className="text-black tracking-widest uppercase text-base font-semibold">
+            Services
+          </span>
+        </div>
+
         {/* Main heading */}
-        <div className="mb-12 pl-16">
-          <h2 className="text-3xl font-bold uppercase">
+        <div className="mb-6 sm:mb-8 md:mb-12 pl-0 md:pl-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase leading-tight">
             EXCLUSIVE, COMMITTED, PROFESSIONAL
           </h2>
-          <h3 className="text-2xl uppercase font-normal">
+          <h3 className="text-lg sm:text-xl md:text-2xl uppercase font-normal mt-1 sm:mt-2">
             SERVICES WE CAN OFFER YOU
           </h3>
         </div>
 
         {/* Service cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pl-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12 pl-0 md:pl-16">
           {services.map((service) => (
             <ServiceCard
               key={service.id}

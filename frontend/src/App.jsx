@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Properties from "./components/Properties";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+import Navbar from "./pages/Navbar";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Properties from "./pages/Properties";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
