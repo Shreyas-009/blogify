@@ -1,7 +1,7 @@
 import React from "react";
 import Bath from "../assets/Cards/Bath.svg";
 import Bed from "../assets/Cards/Bed.svg";
-import PropertyImage from "../assets/Cards/property-image.png";
+import PropertyImage from "../assets/Cards/Property-image.png";
 
 const PropertyCard = ({ price, title, bedrooms, bathrooms }) => {
   return (

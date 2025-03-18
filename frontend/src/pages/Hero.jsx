@@ -1,6 +1,5 @@
 import React from "react";
 import background from "../assets/Hero/Background.png";
-import logo from "../assets/Logo/logo.svg";
 
 const Hero = () => {
   return (

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import linkedin from "../assets/socialmedia_icons/linkedin.svg";
-import facebook from "../assets/socialmedia_icons/facebook.svg";
-import instagram from "../assets/socialmedia_icons/instagram.svg";
-import twitter from "../assets/socialmedia_icons/twitter.svg";
-import youtube from "../assets/socialmedia_icons/youtube.svg";
-import pinterest from "../assets/socialmedia_icons/pinterest.svg";
-import contact from "../assets/socialmedia_icons/contact.svg";
-import logo from "../assets/Logo/logo.svg";
+import linkedin from "../assets/socialmedia_icons/Linkedin.svg";
+import facebook from "../assets/socialmedia_icons/Facebook.svg";
+import instagram from "../assets/socialmedia_icons/Instagram.svg";
+import twitter from "../assets/socialmedia_icons/Twitter.svg";
+import youtube from "../assets/socialmedia_icons/Youtube.svg";
+import pinterest from "../assets/socialmedia_icons/Pinterest.svg";
+import contact from "../assets/socialmedia_icons/Contact.svg";
+import logo from "../assets/Logo/Logo.svg";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -6,15 +6,31 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
-// Middleware
-app.use(cors());
+// CORS configuration
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://blogifybackend-sable.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // Routes
 const contactRoutes = require("./routes/contactRoutes");
 app.use("/api/contact", contactRoutes);
+
+// Test route
+app.use("/", (req, res) => {
+  res.send("backend working");
+});
 
 // MongoDB Connection
 mongoose

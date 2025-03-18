@@ -1,9 +1,9 @@
 import React from "react";
-import SellHomeIcon from "../assets/Services/home.png";
-import BuyHomeIcon from "../assets/Services/house.png";
-import HomeInspectionIcon from "../assets/Services/inspection.png";
-import LegalServicesIcon from "../assets/Services/appartment.png";
-import FreeEvaluationIcon from "../assets/Services/evaluation.png";
+import SellHomeIcon from "../assets/Services/Home.png";
+import BuyHomeIcon from "../assets/Services/House.png";
+import HomeInspectionIcon from "../assets/Services/Inspection.png";
+import LegalServicesIcon from "../assets/Services/Appartment.png";
+import FreeEvaluationIcon from "../assets/Services/Evaluation.png";
 import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
