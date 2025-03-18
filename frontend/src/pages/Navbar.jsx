@@ -147,7 +147,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center md:invisible">
             <button
               className="text-white hover:text-gray-300 focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

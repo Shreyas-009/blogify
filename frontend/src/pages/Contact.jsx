@@ -88,7 +88,10 @@ const Contact = () => {
     <div className="py-8 sm:py-10 md:p-12 flex items-center" id="contact">
       <div className="bg-[#EDF7FA] pt-8 sm:pt-10 md:pt-12 pb-8 sm:pb-18 rounded-xl sm:rounded-2xl w-full">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center max-w-[1100px] px-4 mx-auto relative">
-          <div className="w-full lg:w-2/5 p-5 sm:p-8 lg:p-10 bg-white rounded-xl sm:rounded-2xl shadow-[0px_1px_40px_0px_rgba(0,0,0,0.10)] lg:absolute lg:top-0 lg:left-0">
+          <div
+            className="w-full lg:w-2/5 p-5 sm:p-8 lg:p-10 bg-white rounded-xl sm:rounded-2xl shadow-[0px_1px_40px_0px_rgba(0,0,0,0.10)] lg:absolute lg:top-0 lg:left-0"
+          style={{ boxShadow: "0px 1px 40px 0px rgba(0,0,0,0.10)" }}
+          >
             <h3 className="font-bold text-lg sm:text-xl mb-4 sm:mb-6">
               Send a message today
             </h3>

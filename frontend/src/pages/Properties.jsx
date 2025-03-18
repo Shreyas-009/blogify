@@ -38,7 +38,7 @@ const Properties = () => {
         </div>
 
         {/* Mobile "PROPERTIES" indicator */}
-        <div className="flex md:hidden items-center gap-3 mb-6">
+        <div className="flex md:invisible items-center gap-3 mb-6">
           <div className="bg-[#8665F6] w-12 h-1"></div>
           <span className="text-black tracking-widest uppercase text-base font-semibold">
             Properties

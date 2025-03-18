@@ -5,7 +5,10 @@ import PropertyImage from "../assets/Cards/Property-image.png";
 
 const PropertyCard = ({ price, title, bedrooms, bathrooms }) => {
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-[0px_2px_15px_0px_rgba(0,0,0,0.10)] h-full">
+    <div
+      className="bg-white rounded-xl overflow-hidden shadow-[0px_2px_15px_0px_rgba(0,0,0,0.10)] h-full"
+     style={{ boxShadow: "0px 2px 15px 0px rgba(0,0,0,0.10)" }}
+    >
       <div className="relative h-48 sm:h-56 md:h-64">
         <img
           src={PropertyImage}

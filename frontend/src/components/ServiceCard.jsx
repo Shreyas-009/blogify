@@ -2,7 +2,10 @@ import React from "react";
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-[0px_1px_40px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center gap-2 sm:gap-3">
+    <div
+      className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-[0px_1px_40px_0px_rgba(0,0,0,0.10)] flex flex-col items-center text-center gap-2 sm:gap-3"
+      style={{ boxShadow: "0px 1px 40px 0px rgba(0,0,0,0.10)" }}
+    >
       <img
         src={icon}
         alt={title}
