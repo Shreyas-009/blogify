@@ -70,11 +70,12 @@ const Contact = () => {
     setSuccess(false);
 
     try {
-      await axios.post(`${BASE_URL}/contact`, formData);
+      await axios.post(`${BASE_URL}/api/contact`, formData);
       setSuccess(true);
       setFormData({ name: "", email: "", phone: "", message: "" });
       setPhoneError(false);
     } catch (err) {
+      console.error("Error sending contact form:", err);
       setError(
         err.response?.data?.message || "An error occurred. Please try again."
       );

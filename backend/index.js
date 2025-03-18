@@ -8,16 +8,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// CORS configuration
+// CORS configuration - allow all origins
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://blogifybackend-sable.vercel.app",
-    ],
+    origin: "*", // Allow all origins
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
   })
 );
 
