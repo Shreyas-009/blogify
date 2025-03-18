@@ -12,8 +12,8 @@ const sendContactEmail = async (contactData) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: [
-      // "darsh@roundtechsquare.com",
-      // "minakshi@roundtechsquare.com",
+      "darsh@roundtechsquare.com",
+      "minakshi@roundtechsquare.com",
       "shreyastungar762@gmail.com",
     ],
     subject: "New Contact Form Submission",

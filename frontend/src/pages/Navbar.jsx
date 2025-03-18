@@ -16,7 +16,7 @@ const Navbar = () => {
     if (element) {
       const offsetTop = element.offsetTop;
       window.scrollTo({
-        top: offsetTop - 100, // Offset for navbar height
+        top: offsetTop - 100, 
         behavior: "smooth",
       });
       setMobileMenuOpen(false); // Close mobile menu after navigation
@@ -29,41 +29,26 @@ const Navbar = () => {
       <div className="border-b border-[#CECECE4D] bg-transparent hidden sm:block">
         <div className="max-w-[1280px] mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-blue-800"
-            >
-              <img src={facebook} alt="facebook" className="w-5 h-5" />
+            <a href="#" className="flex items-center justify-center">
+              <img src={facebook} alt="facebook" className="" />
+            </a>
+            <a href="#" className="flex items-center justify-center">
+              <img src={twitter} alt="twitter" className="" />
+            </a>
+            <a href="#" className="flex items-center justify-center">
+              <img src={linkedin} alt="linkedin" className="" />
+            </a>
+            <a href="#" className="flex items-center justify-center">
+              <img src={pinterest} alt="pinterest" className="" />
+            </a>
+            <a href="#" className="flex items-center justify-center">
+              <img src={instagram} alt="instagram" className="" />
             </a>
             <a
               href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-blue-400"
+              className="flex items-center justify-center border-r border-[#CECECE4D]"
             >
-              <img src={twitter} alt="twitter" className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-blue-700"
-            >
-              <img src={linkedin} alt="linkedin" className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-red-700"
-            >
-              <img src={pinterest} alt="pinterest" className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500"
-            >
-              <img src={instagram} alt="instagram" className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 flex items-center justify-center border-r border-[#CECECE4D] transition-all duration-300 hover:bg-red-600"
-            >
-              <img src={youtube} alt="youtube" className="w-5 h-5" />
+              <img src={youtube} alt="youtube" className="" />
             </a>
           </div>
           <div className="flex items-center text-white border-l border-r border-[#CECECE4D] h-11 pr-4 pl-3">
