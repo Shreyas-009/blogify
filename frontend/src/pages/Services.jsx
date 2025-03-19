@@ -63,7 +63,7 @@ const Services = () => {
     >
       <div className="max-w-[1280px] relative mx-auto px-4">
         {/* Vertical "SERVICES" text - hidden on mobile */}
-        <div className="hidden md:flex absolute transform -rotate-90 -left-24 top-24 items-end gap-4">
+        <div className="hidden md:flex absolute transform -rotate-90 -left-20 top-36 items-end gap-4">
           <div className="bg-[#8665F6] w-24 h-1 my-auto"></div>
           <span className="text-black tracking-widest text-center uppercase text-xl font-semibold">
             Services

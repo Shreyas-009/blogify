@@ -16,7 +16,7 @@ const Navbar = () => {
     if (element) {
       const offsetTop = element.offsetTop;
       window.scrollTo({
-        top: offsetTop - 100, 
+        top: offsetTop - 100,
         behavior: "smooth",
       });
       setMobileMenuOpen(false); // Close mobile menu after navigation
@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="w-full absolute top-0 left-0 z-10">
       {/* Top Social Bar */}
       <div className="border-b border-[#CECECE4D] bg-transparent hidden sm:block">
-        <div className="max-w-[1280px] mx-auto flex justify-between items-center">
+        <div className="max-w-[1020px] mx-auto flex justify-between items-center px-4 lg:px-0">
           <div className="flex items-center">
             <a href="#" className="flex items-center justify-center">
               <img src={facebook} alt="facebook" className="" />
@@ -65,7 +65,7 @@ const Navbar = () => {
 
       {/* Main navigation */}
       <div className="py-4 md:py-6">
-        <div className="max-w-[1280px] mx-auto flex justify-between items-center px-4">
+        <div className="max-w-[1020px] mx-auto flex justify-between items-center px-4 lg:px-0">
           <div className="flex items-center">
             <div className="mr-3">
               <img
@@ -147,25 +147,27 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:invisible">
-            <button
-              className="text-white hover:text-gray-300 focus:outline-none"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          <div className="block md:hidden">
+            <div className="flex items-center md:invisible">
+              <button
+                className="text-white hover:text-gray-300 focus:outline-none"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 

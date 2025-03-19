@@ -30,7 +30,7 @@ const Properties = () => {
     <div className="bg-white py-10 sm:py-12 md:py-16" id="sell">
       <div className="max-w-[1280px] relative mx-auto px-4">
         {/* Vertical "PROPERTIES" text - hidden on mobile */}
-        <div className="hidden md:flex absolute transform -rotate-90 -left-24 top-28 items-end gap-4">
+        <div className="hidden md:flex absolute transform -rotate-90 -left-24 top-40 items-end gap-4">
           <div className="bg-[#8665F6] w-24 h-1 my-auto"></div>
           <span className="text-black tracking-widest text-center uppercase text-xl font-semibold">
             Properties
